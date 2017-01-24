@@ -9,6 +9,10 @@
 }
 
 .logo {
-  font-size: 2.5em;
-  color: #fff;
+  font-family: 'Enriqueta', arial, serif; 
+  line-height: 1.25; 
+  margin: 10px 0 0; 
+  font-size: 40px; 
+  font-weight: bold; 
+  color: #fafafa;
 }
