@@ -34,7 +34,7 @@ TODO
 Nå er du ferdig med alle komponentene som skal til for å vise innholdet i en artikkel (it's gonna be fantastic). Nå er det på tide å sette disse sammen og bruke dem for å vise en liste med artikler.
 
 Eksempel på hvordan komponenthierarkiet kan se ut:
--Articles
+- Articles
     - Article
         - Title
         - Category
