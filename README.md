@@ -34,7 +34,7 @@ Vi kan ikke skryte på oss at vi er et fantastisk nyhetsmagasin uten at vi har f
 ```
 
 ## Oppgave 3
-Et kjent ordtak sier at et bilde sier mer enn tusen ord, og vi kan ikke ha en nyhetsside om Trump uten bilder! I denne oppgaven skal du lage en komponent kalt `TrumpImage` som tar i mot bilde-URL og beskrivelse. Den skal vise bildet motatt.
+Et kjent ordtak sier at et bilde sier mer enn tusen ord, og vi kan ikke ha en nyhetsside om Trump uten bilder! I denne oppgaven skal du lage en komponent kalt `ArticleImage` som tar i mot bilde-URL og beskrivelse. Den skal vise bildet motatt.
 
 ```js
 <ArticleImage src={url} alt={description} />
