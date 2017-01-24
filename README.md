@@ -41,3 +41,8 @@ Eksempel på hvordan komponenthierarkiet kan se ut:
         - Ingress
         - TrumpImage
         - Text
+        
+## Oppgave 7
+Styregruppen har akkurat hatt møte og det ble besluttet at Trump produserer så mange nyhetsverdige historier at vi som høyt respektert nyhetsaktør er nødt til å følge med i timen og levere artikler raskere ut til kundene. Akkurat nå har vi dessverre ikke mulighet til å legge til artikler og styret er meget klar på at dette må på plass fort som fy.
+
+Din oppgave er å lage et skjema for å legge til nye artikler. Disse skal lagres ved å kjøre et POST kall mot backend.
