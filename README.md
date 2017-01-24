@@ -96,9 +96,17 @@ Artiklene skal hentes fra backend når App-komponenten legges til DOM-en (hint: 
 
 
 ## Oppgave 7
-Styringsgruppen har akkurat hatt møte og det ble besluttet at Trump produserer så mange nyhetsverdige historier at vi som høyt respektert nyhetsaktør er nødt til å følge med i timen og levere artikler raskere ut til kundene. Akkurat nå har vi dessverre ikke mulighet til å legge til artikler og styret er meget klar på at dette må på plass fort som fy.
+Styret har akkurat hatt møte og det ble besluttet at Trump produserer så mange nyhetsverdige historier at vi som høyt respektert nyhetsaktør er nødt til å følge med i timen og levere artikler raskere ut til kundene. Akkurat nå har vi dessverre ikke mulighet til å legge til artikler og styret er meget klar på at dette må på plass fort som fy.
 
-Din oppgave er å lage et skjema for å legge til nye artikler. Disse skal lagres ved å kjøre et POST kall mot backend.
+Din oppgave er å lage et skjema for å legge til nye artikler. Disse skal lagres ved å kjøre et POST-kall mot backend. Backend-utvikleren er allerede ferdig med sin del av arbeidet, og gir deg følgende kodesnutt å gå etter:
+
+```js
+fetch('/news', {
+	method: 'POST',
+    headers: { Content: 'application/json' },
+    body: JSON.stringify(article)
+})
+```
 
 ## Oppgave 8
 Det blir bare flere og flere artikler, og flere og flere artikkelkategorier. Redaktøren innser at leserne må få presentert en liste over kategoriene som TrumpNews dekker på forsiden. Denne listen skal ligge ved siden av artikkel-listen. Hver kategori skal være klikkbar. Når en kategori blir klikket på, skal artikkel-listen filtreres, slik at bare artikler publisert i denne kategorien vises.
@@ -126,3 +134,16 @@ Etter en kopp kaffe og noen fine gloser hopper du på jobben med nyfunnet gnist 
 Brukerne ønsker et søkefelt over artiklene som gir dem mulighet til å søke etter artikler med tittel som matcher.
 
 Hvor avansert du ønsker å lage søket får være opp til deg som utvikler, men i kravet står det spesifisert at det minimum må være et søk på tittel med contains.
+
+## Oppgave 10
+Styret vil ikke la deg være i fred. Styremedlemmene har nå innsett at nyheter er levende saker, og de ser et behov for å kunne oppdatere nyhetssakene.
+
+Din oppgave er å lage skjema for å oppdatere en artikkel (du må gjerne gjenbruke noe eller alt av skjemaet fra oppgave 7). Den oppdaterte artikkelen skal lagres til backend. Backend-utvikleren er allerede ferdig med sin del av arbeidet, og gir deg følgende kodesnutt å gå etter:
+
+```js
+fetch(`/news/${article.id}`, {
+	method: 'PUT',
+    headers: { Content: 'application/json' },
+    body: JSON.stringify(article)
+})
+```
