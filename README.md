@@ -27,6 +27,7 @@ Sjekk at endringene vises i nettleseren.
 ## Oppgave 2
 Vi kan ikke skryte på oss at vi er et fantastisk nyhetsmagasin uten at vi har flashy titler på artiklene våre. Lag en komponent kalt `ArticleTitle` som tar imot tittel-teksten som et barn (child). Og husk, lag den flashy!
 
+API:
 ```js
 <ArticleTitle>
 	Trump's order on abortion policy: What does it mean?
@@ -43,6 +44,7 @@ Selv om bildet sier mer enn tusen ord, trenger vi noen ekstra ord for å gjøre 
 
 Lag en komponent kalt `ArticleLeadText` som tar imot ingressen som et barn.
 
+API:
 ```js
 <ArticleLeadText>
 	A group of men standing around a desk: it is not the typical image that goes viral online.
@@ -51,6 +53,7 @@ Lag en komponent kalt `ArticleLeadText` som tar imot ingressen som et barn.
 
 Lag deretter en komponent kalt `ArticleText` som tar imot brødteksten som et barn.
 
+API:
 ```js
 <ArticleText>
 	The photograph in question was taken...
@@ -60,6 +63,7 @@ Lag deretter en komponent kalt `ArticleText` som tar imot brødteksten som et ba
 
 Vi trenger også å vise kategorien som denne artikkelen ligger under. Lag en komponent kalt `Category` som tar imot kategorien som et barn.
 
+API:
 ```js
 <Category>Abortion</Category>
 ```
@@ -77,12 +81,40 @@ Eksempel på hvordan komponenthierarkiet kan se ut:
         - ArticleText
 
 ## Oppgave 6
+Nå er det dags for litt "ordentlige" data. Foreløpig har vi bare brukt _mockede_ artikler som er initialisert i frontend. Nå skal vi hente artikler fra backend. Til det bruker vi [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API). Artiklene henter vi på denne måten:
 
-        
+```js
+fetch('/news')
+	.then(response => response.json())
+    .then(news => /* gjør noe med artiklene */)
+    .catch(err => console.error('Failed to get news. Totally fake.', err));
+```
+
+Artiklene skal hentes fra backend når App-komponenten legges til DOM-en (hint: componentDidUpdate).
+
+
 ## Oppgave 7
 Styringsgruppen har akkurat hatt møte og det ble besluttet at Trump produserer så mange nyhetsverdige historier at vi som høyt respektert nyhetsaktør er nødt til å følge med i timen og levere artikler raskere ut til kundene. Akkurat nå har vi dessverre ikke mulighet til å legge til artikler og styret er meget klar på at dette må på plass fort som fy.
 
 Din oppgave er å lage et skjema for å legge til nye artikler. Disse skal lagres ved å kjøre et POST kall mot backend.
+
+## Oppgave 8
+Det blir bare flere og flere artikler, og flere og flere artikkelkategorier. Redaktøren innser at leserne må få presentert en liste over kategoriene som TrumpNews dekker på forsiden. Denne listen skal ligge ved siden av artikkel-listen. Hver kategori skal være klikkbar. Når en kategori blir klikket på, skal artikkel-listen filtreres, slik at bare artikler publisert i denne kategorien vises.
+
+API:
+```js
+<Categories>
+	<Category onCategoryChange={???}>Abortion</Category>
+    <Category onCategoryChange={???}>Election</Category>
+</Categories>
+```
+
+_Bonus-oppgave:_ Vis totalt antall artikler innenfor hver kategori sammen med kategorinavnet (med reelt antall, selvsagt).
+
+API:
+```js
+<Category count={8}>Election</Category>
+```
 
 ## Oppgave 9
 Nå som du endelig tenkte at du kunne slappe litt av og puste lettet ut etter at all funksjonaliteten hadde blitt levert får du tilbakemelding fra prosjektleder om at det har kommet inn en storm med klager over at brukerne ikke finner artiklene de leter etter.
