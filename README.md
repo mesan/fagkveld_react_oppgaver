@@ -83,3 +83,12 @@ Eksempel på hvordan komponenthierarkiet kan se ut:
 Styringsgruppen har akkurat hatt møte og det ble besluttet at Trump produserer så mange nyhetsverdige historier at vi som høyt respektert nyhetsaktør er nødt til å følge med i timen og levere artikler raskere ut til kundene. Akkurat nå har vi dessverre ikke mulighet til å legge til artikler og styret er meget klar på at dette må på plass fort som fy.
 
 Din oppgave er å lage et skjema for å legge til nye artikler. Disse skal lagres ved å kjøre et POST kall mot backend.
+
+## Oppgave 9
+Nå som du endelig tenkte at du kunne slappe litt av og puste lettet ut etter at all funksjonaliteten hadde blitt levert får du tilbakemelding fra prosjektleder om at det har kommet inn en storm med klager over at brukerne ikke finner artiklene de leter etter.
+
+Etter en kopp kaffe og noen fine gloser hopper du på jobben med nyfunnet gnist og arbeidsmoral.
+
+Brukerne ønsker et søkefelt over artiklene som gir dem mulighet til å søke etter artikler med tittel som matcher.
+
+Hvor avansert du ønsker å lage søket får være opp til deg som utvikler, men i kravet står det spesifisert at det minimum må være et søk på tittel med contains.
