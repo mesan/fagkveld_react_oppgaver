@@ -31,7 +31,7 @@ Et kjent ordtak sier at et bilde sier mer enn tusen ord, og vi kan ikke ha en ny
 TODO
 
 ## Oppgave 5
-Nå er du ferdig med alle komponentene som skal til for å vise innholdet i en artikkel (it's gonna be fantastic). Nå er det på tide å sette disse sammen og bruke dem for å vise en liste med artikler.
+Nå er du ferdig med alle komponentene som skal til for å vise innholdet for en artikkel. Nå er det på tide å sette disse sammen og bruke dem for å vise en liste med artikler. It's gonna be fantastic!
 
 Eksempel på hvordan komponenthierarkiet kan se ut:
 - Articles
