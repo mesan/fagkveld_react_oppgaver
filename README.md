@@ -23,7 +23,7 @@ Sjekk at endringene vises i nettleseren.
 TODO
 
 ## Oppgave 3
-Et kjent ordtak sier at et bilde sier mer enn tusen ord, og vi kan ikke ha en nyhetsside om Trump uten bilder! I denne oppgaven skal du lage en komponent kalt TrumpImage som tar i mot bildeurl og beskrivelse. Den skal vise bildet motatt i url.
+Et kjent ordtak sier at et bilde sier mer enn tusen ord, og vi kan ikke ha en nyhetsside om Trump uten bilder! I denne oppgaven skal du lage en komponent kalt TrumpImage som tar i mot bildeurl og beskrivelse. Den skal vise bildet motatt.
 
 **`<TrumpImage src={url} alt={description} />`**
 
