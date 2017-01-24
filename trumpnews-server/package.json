@@ -7,6 +7,9 @@
   },
   "author": "Arild Wanvik Tvergrov <arild.wanvik@gmail.com>",
   "license": "ISC",
+  "scripts": {
+    "start": "node index"
+  },
   "dependencies": {
     "hapi": "^16.1.0",
     "joi": "^10.2.0"
