@@ -1,0 +1,19 @@
+{
+  "name": "trumpnews-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arild Wanvik Tvergrov <arild.wanvik@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^16.1.0",
+    "joi": "^10.2.0"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "mocha": "^3.2.0",
+    "node-fetch": "^1.6.3"
+  }
+}
