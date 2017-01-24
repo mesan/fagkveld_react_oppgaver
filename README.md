@@ -15,7 +15,7 @@ Last ned repo ved å kjøre **git clone https://github.com/mesan/fagkveld_react_
 Installer alle nødvendige pakker ved å kjøre kommandoen **npm install** for deretter å starte applikasjonen ved å kjøre **npm start**
 
 Gjør endring i filen *src/App.js*:
-Endre fra **<h1>Velkommen til fagkveld!</h1>** til **<h1>It's gonna be great!</h1>**
+Endre teksten fra **Velkommen til fagkveld!** til **It's gonna be great!**
 
 Sjekk at endringene vises i nettleseren.
 
