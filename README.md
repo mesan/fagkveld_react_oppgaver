@@ -107,7 +107,7 @@ fetch('/news', {
     body: JSON.stringify(article)
 })
 ```
-'article' er definert slik: 
+`article` er definert slik: 
 ```js
 {
   title,
