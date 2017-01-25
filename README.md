@@ -142,6 +142,7 @@ API:
 Filtrering av artikler på kategori hjalp en stund, men nå har det blitt så mange artikler at brukerene sliter med å finne det de leter etter. Redaktøren ønsker derfor å utvide artikkelisten med søkemulighet. Hvor avansert du ønsker å lage søket får være opp til deg som utvikler, men i kravet står det spesifisert at det minimum må være et søk på tittel med contains.
 
 Søkekomponenten skal inneholde et input-felt for å skrive inn søketekst. Komponenten kan fungere ved å enten:
+
 1. Legge til en søkeknapp for å trigge søket
 2. Oppdatere søket 'live' mens brukeren skriver
 
