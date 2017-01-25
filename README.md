@@ -139,13 +139,11 @@ API:
 ```
 
 ## Oppgave 9
-Nå som du endelig tenkte at du kunne slappe litt av og puste lettet ut etter at all funksjonaliteten hadde blitt levert får du tilbakemelding fra prosjektleder om at det har kommet inn en storm med klager over at brukerne ikke finner artiklene de leter etter.
+Filtrering av artikler på kategori hjalp en stund, men nå har det blitt så mange artikler at brukerene sliter med å finne det de leter etter. Redaktøren ønsker derfor å utvide artikkelisten med søkemulighet. Hvor avansert du ønsker å lage søket får være opp til deg som utvikler, men i kravet står det spesifisert at det minimum må være et søk på tittel med contains.
 
-Etter en kopp kaffe og noen fine gloser hopper du på jobben med nyfunnet gnist og arbeidsmoral.
-
-Brukerne ønsker et søkefelt over artiklene som gir dem mulighet til å søke etter artikler med tittel som matcher.
-
-Hvor avansert du ønsker å lage søket får være opp til deg som utvikler, men i kravet står det spesifisert at det minimum må være et søk på tittel med contains.
+Søkekomponenten skal inneholde et input-felt for å skrive inn søketekst. Komponenten kan fungere ved å enten:
+	1. Legge til en søkeknapp for å trigge søket
+	2. Oppdatere søket 'live' mens brukeren skriver
 
 ## Oppgave 10
 Styret vil ikke la deg være i fred. Styremedlemmene har nå innsett at nyheter er levende saker, og de ser et behov for å kunne oppdatere nyhetssakene.
