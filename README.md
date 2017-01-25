@@ -107,6 +107,18 @@ fetch('/news', {
     body: JSON.stringify(article)
 })
 ```
+'article' er definert slik: 
+```js
+{
+  title,
+  imageUrl,
+  leadText,
+  text,
+  category:
+}
+```
+
+Legg gjerne til skjema for å opprette avtale under avtalelisten. Hvis du vil ha en litt større utfordring så kan du se på react-router og hvordan man legger til en egen side.
 
 ## Oppgave 8
 Det blir bare flere og flere artikler, og flere og flere artikkelkategorier. Redaktøren innser at leserne må få presentert en liste over kategoriene som TrumpNews dekker på forsiden. Denne listen skal ligge ved siden av artikkel-listen. Hver kategori skal være klikkbar. Når en kategori blir klikket på, skal artikkel-listen filtreres, slik at bare artikler publisert i denne kategorien vises.
